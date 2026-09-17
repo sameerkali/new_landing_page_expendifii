@@ -18,15 +18,7 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:items-center lg:gap-8 lg:px-8">
         {/* ---------------- copy ---------------- */}
         <div className="max-w-xl">
-          <p
-            data-reveal
-            className="border-clay-line bg-clay-tint text-clay inline-flex items-center gap-2 rounded-full border px-3 py-1.5 font-mono text-[11px] tracking-[0.14em] uppercase"
-          >
-            <span className="bg-clay-bright relative flex h-1.5 w-1.5 rounded-full">
-              <span className="bg-clay-bright absolute inline-flex h-full w-full animate-ping rounded-full opacity-60" />
-            </span>
-            {hero.eyebrow}
-          </p>
+          
 
           <h1
             data-reveal

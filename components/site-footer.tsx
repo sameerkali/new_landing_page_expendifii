@@ -103,7 +103,7 @@ export function SiteFooter() {
 
         <div className="mt-14 flex flex-wrap items-center justify-between gap-4 border-t border-neutral-200 pt-6">
           <p className="font-mono text-[11px] tracking-[0.1em] text-neutral-400">
-            © {site.year} Expendifii — {site.footerLine}
+            © {site.year} Expendifii {site.footerLine}
           </p>
           <p className="font-mono text-[11px] tracking-[0.1em] text-neutral-400">
             Noida, India

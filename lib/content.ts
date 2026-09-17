@@ -18,10 +18,9 @@ export const site = {
 } as const;
 
 export const hero = {
-  eyebrow: "3 products live · 89 paying businesses",
   h1a: "Small software for",
   h1b: "small businesses.",
-  sub: "We build and run our own products — review collection, digital loyalty cards, and transport management. All three are live today and used by shops, cafés, and transporters across India.",
+  sub: "We build and run our own products review collection, digital loyalty cards, and transport management. All three are live today and used by shops, cafés, and transporters across India.",
   cta: "See a Demo on WhatsApp",
   micro:
     "No signup page, no free trial. We show you a demo, and if it fits, you're running it the same week.",

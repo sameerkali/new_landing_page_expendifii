@@ -251,14 +251,7 @@ export function HeroWheel({ slides }: { slides: Slide[] }) {
           })}
         </div>
 
-        <p className="pointer-events-none absolute bottom-6 left-2 z-[200] inline-flex items-center gap-2 rounded-full border border-neutral-200/80 bg-white/70 px-3 py-1.5 font-mono text-[10px] tracking-[0.2em] text-neutral-500 uppercase backdrop-blur-sm">
-          <span aria-hidden="true" className="flex flex-col gap-[3px]">
-            <span className="block h-[3px] w-[3px] rounded-full bg-neutral-400" />
-            <span className="bg-clay-bright block h-[3px] w-[3px] rounded-full" />
-            <span className="block h-[3px] w-[3px] rounded-full bg-neutral-400" />
-          </span>
-          Drag to explore
-        </p>
+        
       </div>
 
       {/* ---------- mobile / tablet: a flowing strip ---------- */}
