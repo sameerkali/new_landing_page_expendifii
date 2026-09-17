@@ -17,7 +17,7 @@ type Slide = { src: string; alt: string };
  */
 
 const ASPECT = 1; // product screenshots are square canvases
-const CARD_WIDTH = 0.62; // fraction of stage width
+const CARD_WIDTH = 0.38; // fraction of stage width
 const STEP = 1.312; // card-heights between neighbours
 // Perspective magnifies the near card and shrinks the far ones, so the swing
 // is hung on the card at the front. That way the widest part of the arc is
@@ -229,7 +229,7 @@ export function HeroWheel({ slides }: { slides: Slide[] }) {
                 ref={(el) => {
                   itemsRef.current[i] = el;
                 }}
-                className="absolute top-1/2 left-1/2 w-[62%] will-change-transform"
+                className="absolute top-1/2 left-1/2 w-[31%] will-change-transform"
                 style={{
                   transform: transformOf(initial),
                   opacity: initial.opacity,
@@ -270,7 +270,7 @@ export function HeroWheel({ slides }: { slides: Slide[] }) {
           {[...slides, ...slides].map((slide, i) => (
             <div
               key={`${slide.src}-${i}`}
-              className="aspect-square w-[260px] flex-none overflow-hidden rounded-[18px] ring-1 ring-black/5 sm:w-[340px]"
+              className="aspect-square w-32.5 flex-none overflow-hidden rounded-[18px] ring-1 ring-black/5 sm:w-42.5"
             >
               <Image
                 src={slide.src}
