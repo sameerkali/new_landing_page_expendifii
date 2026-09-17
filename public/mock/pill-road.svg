@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="340" viewBox="0 0 800 340" role="img">
+  <defs>
+    <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f2a38"/>
+      <stop offset="0.52" stop-color="#7a4a2a"/>
+      <stop offset="1" stop-color="#cc5400"/>
+    </linearGradient>
+    <linearGradient id="tar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2622"/>
+      <stop offset="1" stop-color="#121010"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd9a0" stop-opacity="1"/>
+      <stop offset="1" stop-color="#ffd9a0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="340" fill="url(#dusk)"/>
+  <circle cx="400" cy="186" r="130" fill="url(#sun)" opacity="0.75"/>
+  <circle cx="400" cy="188" r="40" fill="#ffe2b4" opacity="0.9"/>
+
+  <!-- distant hills -->
+  <path d="M0 196 L120 168 L210 190 L330 160 L430 192 L540 164 L660 192 L800 170 L800 210 L0 210 Z"
+        fill="#3b2a22" opacity="0.75"/>
+
+  <!-- road -->
+  <path d="M330 204 L470 204 L800 340 L0 340 Z" fill="url(#tar)"/>
+  <path d="M330 204 L470 204 L478 214 L322 214 Z" fill="#4a423c" opacity="0.6"/>
+
+  <!-- centre dashes -->
+  <g fill="#ffdca8" opacity="0.92">
+    <path d="M398 208 L404 208 L405 220 L397 220 Z"/>
+    <path d="M395 230 L407 230 L409 250 L393 250 Z"/>
+    <path d="M390 264 L412 264 L416 296 L386 296 Z"/>
+    <path d="M382 312 L420 312 L426 340 L376 340 Z"/>
+  </g>
+
+  <!-- shoulder lines -->
+  <path d="M332 206 L8 340" stroke="#e8d7c0" stroke-width="3" opacity="0.35" fill="none"/>
+  <path d="M468 206 L792 340" stroke="#e8d7c0" stroke-width="3" opacity="0.35" fill="none"/>
+
+  <!-- lorry -->
+  <g transform="translate(486 126)">
+    <rect x="0" y="0" width="128" height="74" rx="8" fill="#e9e3d8"/>
+    <rect x="0" y="0" width="128" height="16" rx="6" fill="#cfc7b8"/>
+    <rect x="128" y="24" width="52" height="50" rx="8" fill="#cc5400"/>
+    <rect x="136" y="32" width="34" height="22" rx="5" fill="#ffd9a8" opacity="0.85"/>
+    <rect x="0" y="74" width="180" height="9" rx="4" fill="#2a2622"/>
+    <circle cx="34" cy="88" r="12" fill="#1a1715"/>
+    <circle cx="34" cy="88" r="5" fill="#57504a"/>
+    <circle cx="150" cy="88" r="12" fill="#1a1715"/>
+    <circle cx="150" cy="88" r="5" fill="#57504a"/>
+    <rect x="12" y="26" width="104" height="5" rx="2" fill="#cfc7b8"/>
+    <rect x="12" y="40" width="72" height="5" rx="2" fill="#cfc7b8"/>
+  </g>
+
+  <!-- consignment note fluttering -->
+  <g transform="translate(112 132) rotate(-9)">
+    <rect x="0" y="0" width="104" height="128" rx="6" fill="#fdfaf4"/>
+    <rect x="12" y="14" width="52" height="7" rx="3.5" fill="#cc5400"/>
+    <g fill="#cfc9c0">
+      <rect x="12" y="32" width="80" height="5" rx="2.5"/>
+      <rect x="12" y="46" width="66" height="5" rx="2.5"/>
+      <rect x="12" y="60" width="74" height="5" rx="2.5"/>
+      <rect x="12" y="74" width="48" height="5" rx="2.5"/>
+      <rect x="12" y="88" width="70" height="5" rx="2.5"/>
+    </g>
+    <rect x="12" y="104" width="38" height="12" rx="6" fill="#ffe0c4"/>
+  </g>
+
+  <!-- headlight haze -->
+  <circle cx="688" cy="214" r="54" fill="#ffd9a0" opacity="0.14"/>
+</svg>

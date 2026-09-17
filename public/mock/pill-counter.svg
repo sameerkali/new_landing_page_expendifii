@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="340" viewBox="0 0 800 340" role="img">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd9a8"/>
+      <stop offset="0.55" stop-color="#ffb066"/>
+      <stop offset="1" stop-color="#e06a1c"/>
+    </linearGradient>
+    <linearGradient id="counter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b3a18"/>
+      <stop offset="1" stop-color="#35190a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.32" r="0.5">
+      <stop offset="0" stop-color="#fff3d6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff3d6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="340" fill="url(#sky)"/>
+  <circle cx="578" cy="108" r="150" fill="url(#glow)"/>
+  <circle cx="578" cy="112" r="54" fill="#fff6e2" opacity="0.92"/>
+
+  <!-- back shelf -->
+  <rect x="40" y="86" width="250" height="9" rx="4" fill="#5c2f12" opacity="0.5"/>
+  <g fill="#5c2f12" opacity="0.5">
+    <rect x="58" y="52" width="20" height="34" rx="4"/>
+    <rect x="88" y="44" width="16" height="42" rx="4"/>
+    <rect x="114" y="58" width="24" height="28" rx="4"/>
+    <rect x="150" y="48" width="18" height="38" rx="4"/>
+    <rect x="178" y="62" width="22" height="24" rx="4"/>
+  </g>
+
+  <!-- counter slab -->
+  <path d="M0 214 L800 190 L800 340 L0 340 Z" fill="url(#counter)"/>
+  <path d="M0 214 L800 190 L800 206 L0 232 Z" fill="#8a5227" opacity="0.85"/>
+
+  <!-- cups on the counter -->
+  <g transform="translate(148 150)">
+    <path d="M0 14 h58 v26 a20 20 0 0 1 -20 20 h-18 a20 20 0 0 1 -20 -20 Z" fill="#fffaf2"/>
+    <path d="M58 20 h9 a11 11 0 0 1 0 22 h-9" fill="none" stroke="#fffaf2" stroke-width="7"/>
+    <ellipse cx="29" cy="14" rx="29" ry="7" fill="#e9d6bd"/>
+    <path d="M14 4 c6 -7 6 -12 0 -19 M29 2 c6 -7 6 -12 0 -19 M44 4 c6 -7 6 -12 0 -19"
+          stroke="#fffaf2" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.65"/>
+  </g>
+
+  <g transform="translate(262 176)">
+    <path d="M0 10 h44 v20 a16 16 0 0 1 -16 16 h-12 a16 16 0 0 1 -16 -16 Z" fill="#f7e6cf"/>
+    <ellipse cx="22" cy="10" rx="22" ry="5.5" fill="#d9c0a0"/>
+  </g>
+
+  <!-- card reader / tap point -->
+  <g transform="translate(470 156)">
+    <rect x="0" y="0" width="86" height="96" rx="14" fill="#1a1512"/>
+    <rect x="9" y="9" width="68" height="52" rx="8" fill="#2a2320"/>
+    <g stroke="#ff8a3c" stroke-width="5" fill="none" stroke-linecap="round">
+      <path d="M32 44 a14 14 0 0 1 0 -20"/>
+      <path d="M44 50 a24 24 0 0 0 0 -32"/>
+      <path d="M56 56 a34 34 0 0 0 0 -44"/>
+    </g>
+    <circle cx="43" cy="78" r="7" fill="#4a423d"/>
+  </g>
+
+  <!-- foreground bokeh -->
+  <circle cx="712" cy="250" r="46" fill="#ffd9a8" opacity="0.22"/>
+  <circle cx="648" cy="296" r="26" fill="#ffe9c9" opacity="0.18"/>
+  <circle cx="92" cy="286" r="34" fill="#ffd9a8" opacity="0.14"/>
+</svg>
