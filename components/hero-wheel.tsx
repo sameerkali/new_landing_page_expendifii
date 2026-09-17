@@ -17,18 +17,18 @@ type Slide = { src: string; alt: string };
  */
 
 const ASPECT = 1; // product screenshots are square canvases
-const CARD_WIDTH = 0.38; // fraction of stage width
+const CARD_WIDTH = 0.48; // fraction of stage width
 const STEP = 1.312; // card-heights between neighbours
 // Perspective magnifies the near card and shrinks the far ones, so the swing
 // is hung on the card at the front. That way the widest part of the arc is
 // also the part the projection amplifies, and the distant cards stay tucked
 // in rather than wandering out over the headline.
 const SWEEP = 46; // % of card width the arc carries the front card right
-const SPIN = 8; // deg the card cants over across the sweep
-const HOME = -33; // % x offset at the top and bottom of the arc
-const DRIFT = 0.09; // cards per second, idle
+const SPIN = 12; // deg the card cants over across the sweep
+const HOME = -13; // % x offset at the top and bottom of the arc
+const DRIFT = 0.20; // cards per second, idle
 const DECAY = 0.935; // per 1/60s, momentum falloff
-const RAMP = 0.9; // seconds to fade the drift back in
+const RAMP = 0.20; // seconds to fade the drift back in
 
 /**
  * Positions one card on the rim of the wheel.
