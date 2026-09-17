@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { products, site } from "@/lib/content";
 import { ArrowUpRight } from "./icons";
+import { Logo } from "./logo";
 
 export function SiteFooter() {
   return (
@@ -9,11 +10,7 @@ export function SiteFooter() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <Link href="/" className="group/logo flex items-center gap-2.5">
-              <span className="bg-ink ease-spring flex h-7 w-7 items-center justify-center rounded-md ring-1 ring-black/10 transition-transform duration-500 group-hover/logo:scale-[1.06] group-hover/logo:-rotate-[7deg]">
-                <span className="text-clay-bright font-display text-[15px] leading-none font-semibold italic">
-                  E
-                </span>
-              </span>
+              <Logo size={30} />
               <span className="text-[15px] font-semibold tracking-tight text-neutral-900">
                 Expendifii
               </span>

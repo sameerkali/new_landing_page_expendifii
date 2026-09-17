@@ -38,6 +38,12 @@ export const metadata: Metadata = {
     locale: "en_IN",
     siteName: "Expendifii",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Expendifii — Software for Shops, Cafés & Transporters in India",
+    description:
+      "Review collection with analytics, digital loyalty stamp cards, and BiltyOne transport management. Live products, paying customers.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

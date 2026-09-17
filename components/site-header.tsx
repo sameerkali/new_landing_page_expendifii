@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { navLinks, site } from "@/lib/content";
 import { ArrowUpRight, ChevronDown, WhatsAppMark } from "./icons";
+import { Logo } from "./logo";
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,11 +38,7 @@ export function SiteHeader() {
           className="group/logo flex items-center gap-2.5"
           aria-label="Expendifii, home"
         >
-          <span className="bg-ink ease-spring relative flex h-7 w-7 items-center justify-center overflow-hidden rounded-md ring-1 ring-black/10 transition-transform duration-500 group-hover/logo:scale-[1.06] group-hover/logo:-rotate-[7deg]">
-            <span className="text-clay-bright font-display text-[15px] leading-none font-semibold italic">
-              E
-            </span>
-          </span>
+          <Logo size={30} />
           <span className="text-[15px] font-semibold tracking-tight text-neutral-900">
             Expendifii
           </span>
