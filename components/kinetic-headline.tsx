@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Spark } from "./icons";
+import { SpinningSpark } from "./spinning-spark";
 
 const SANS: React.CSSProperties = {
   fontFamily: "var(--font-sans)",
@@ -96,7 +96,7 @@ export function KineticHeadline() {
               }}
               aria-hidden="true"
             >
-              <Spark className="h-full w-full" />
+              <SpinningSpark />
             </span>
             <span data-reveal="blur" data-reveal-delay="240" style={SANS}>
               businesses.
