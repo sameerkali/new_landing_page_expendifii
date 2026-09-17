@@ -67,7 +67,7 @@ export const products: Product[] = [
       "Print output that matches what your office already uses",
     ],
     note: "Still early. We're onboarding our first transporters and changing things fast based on what they tell us.",
-    image: "/animation_images/Gr_preview_image.webp",
+    image: "/projects/biltyoneLandingPage.webp",
     imageAlt: "BiltyOne consignment note entry screen",
     gallery: [
       {
@@ -106,7 +106,7 @@ export const products: Product[] = [
     ],
     audience:
       "For any counter-facing business that wants Google reviews without asking staff to beg for them.",
-    image: "/animation_images/review_image_.webp",
+    image: "/projects/reviewlandingPage.webp",
     imageAlt: "Review tap screen with rating chips",
     gallery: [
       {
@@ -140,7 +140,7 @@ export const products: Product[] = [
       "You set the milestone and the reward",
       "You can see who's coming back and how often",
     ],
-    image: "/animation_images/lol_display_image.webp",
+    image: "/projects/lolLandingPage.webp",
     imageAlt: "LOL digital stamp card",
     gallery: [
       {
