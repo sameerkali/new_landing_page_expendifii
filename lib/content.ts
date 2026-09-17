@@ -67,16 +67,16 @@ export const products: Product[] = [
       "Print output that matches what your office already uses",
     ],
     note: "Still early. We're onboarding our first transporters and changing things fast based on what they tell us.",
-    image: "/mock/biltyone-gr.svg",
+    image: "/animation_images/Gr_preview_image.webp",
     imageAlt: "BiltyOne consignment note entry screen",
     gallery: [
       {
-        src: "/mock/biltyone-gr.svg",
+        src: "/animation_images/Gr_preview_image.webp",
         alt: "BiltyOne consignment note entry screen",
         caption: "One entry replaces twenty-plus fields written three times.",
       },
       {
-        src: "/mock/biltyone-list.svg",
+        src: "/animation_images/Gr_preview_image.webp",
         alt: "BiltyOne consignment list with status",
         caption: "Every GR searchable, nothing lost in a register.",
       },
@@ -106,16 +106,16 @@ export const products: Product[] = [
     ],
     audience:
       "For any counter-facing business that wants Google reviews without asking staff to beg for them.",
-    image: "/mock/review-tap.svg",
+    image: "/animation_images/review_image_.webp",
     imageAlt: "Review tap screen with rating chips",
     gallery: [
       {
-        src: "/mock/review-tap.svg",
+        src: "/animation_images/review_image_.webp",
         alt: "Review tap screen with rating chips",
         caption: "The customer picks what stood out. The words follow.",
       },
       {
-        src: "/mock/review-analytics.svg",
+        src: "/animation_images/analytics_display_image.webp",
         alt: "Review analytics dashboard",
         caption: "What customers notice, whether or not they post it.",
       },
@@ -140,11 +140,11 @@ export const products: Product[] = [
       "You set the milestone and the reward",
       "You can see who's coming back and how often",
     ],
-    image: "/mock/lol-stamps.svg",
+    image: "/animation_images/lol_display_image.webp",
     imageAlt: "LOL digital stamp card",
     gallery: [
       {
-        src: "/mock/lol-stamps.svg",
+        src: "/animation_images/lol_display_image.webp",
         alt: "LOL digital stamp card",
         caption: "Six of eight. Nothing to install, nothing to lose.",
       },
@@ -174,11 +174,11 @@ export const products: Product[] = [
       "Built once, fast",
       "We host and maintain it",
     ],
-    image: "/mock/landing-page.svg",
+    image: "/animation_images/landingPageDisplay.webp",
     imageAlt: "Custom landing page built for a café",
     gallery: [
       {
-        src: "/mock/landing-page.svg",
+        src: "/animation_images/landingPageDisplay.webp",
         alt: "Custom landing page built for a café",
         caption: "One page, built once, hosted and maintained by us.",
       },
@@ -188,13 +188,30 @@ export const products: Product[] = [
 ];
 
 export const heroDeck = [
-  { src: "/mock/biltyone-gr.svg", alt: "BiltyOne consignment note entry" },
-  { src: "/mock/review-tap.svg", alt: "Review tap screen with rating chips" },
-  { src: "/mock/lol-stamps.svg", alt: "LOL digital stamp card" },
-  { src: "/mock/biltyone-list.svg", alt: "BiltyOne consignment list" },
-  { src: "/mock/review-analytics.svg", alt: "Review analytics dashboard" },
-  { src: "/mock/lol-dashboard.svg", alt: "LOL repeat customer dashboard" },
-  { src: "/mock/landing-page.svg", alt: "Custom landing page for a café" },
+  {
+    src: "/animation_images/Gr_preview_image.webp",
+    alt: "BiltyOne goods receipt entry form",
+  },
+  {
+    src: "/animation_images/review_image_.webp",
+    alt: "Review tap screen with star ratings",
+  },
+  {
+    src: "/animation_images/lol_display_image.webp",
+    alt: "LOL digital stamp card",
+  },
+  {
+    src: "/animation_images/biltyone_display_image.webp",
+    alt: "BiltyOne transport dashboard",
+  },
+  {
+    src: "/animation_images/analytics_display_image.webp",
+    alt: "Review analytics dashboard",
+  },
+  {
+    src: "/animation_images/tsm_page.webp",
+    alt: "BiltyOne marketing landing page",
+  },
 ];
 
 export const numbers = [

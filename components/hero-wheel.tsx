@@ -16,7 +16,7 @@ type Slide = { src: string; alt: string };
  * goes through React state.
  */
 
-const ASPECT = 780 / 1200; // mock artwork ratio
+const ASPECT = 1; // product screenshots are square canvases
 const CARD_WIDTH = 0.62; // fraction of stage width
 const STEP = 1.312; // card-heights between neighbours
 // Perspective magnifies the near card and shrinks the far ones, so the swing
@@ -239,12 +239,12 @@ export function HeroWheel({ slides }: { slides: Slide[] }) {
                 <Image
                   src={slide.src}
                   alt=""
-                  width={1200}
-                  height={780}
+                  width={1254}
+                  height={1254}
                   unoptimized
                   draggable={false}
                   priority={i < 3}
-                  className="h-auto w-full rounded-[18px] shadow-[0_30px_70px_-40px_rgba(10,10,10,0.5)] ring-1 ring-black/5"
+                  className="aspect-square w-full rounded-[18px] object-cover shadow-[0_30px_70px_-40px_rgba(10,10,10,0.5)] ring-1 ring-black/5"
                 />
               </figure>
             );
@@ -270,16 +270,16 @@ export function HeroWheel({ slides }: { slides: Slide[] }) {
           {[...slides, ...slides].map((slide, i) => (
             <div
               key={`${slide.src}-${i}`}
-              className="w-[260px] flex-none overflow-hidden rounded-[18px] ring-1 ring-black/5 sm:w-[340px]"
+              className="aspect-square w-[260px] flex-none overflow-hidden rounded-[18px] ring-1 ring-black/5 sm:w-[340px]"
             >
               <Image
                 src={slide.src}
                 alt={slide.alt}
-                width={1200}
-                height={780}
+                width={1254}
+                height={1254}
                 unoptimized
                 draggable={false}
-                className="h-auto w-full"
+                className="h-full w-full object-cover"
               />
             </div>
           ))}
