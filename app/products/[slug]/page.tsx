@@ -137,7 +137,7 @@ export default async function ProductPage({
             >
               {product.gallery.map((shot, i) => (
                 <figure
-                  key={shot.src}
+                  key={`${shot.src}-${i}`}
                   data-reveal
                   data-reveal-delay={String(80 * i)}
                   className="group overflow-hidden rounded-2xl border border-neutral-200/80 bg-white/70 backdrop-blur-sm transition-[border-color,box-shadow] duration-500 hover:border-neutral-300 hover:shadow-[0_24px_50px_-30px_rgba(0,0,0,0.28)]"
