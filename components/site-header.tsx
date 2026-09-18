@@ -27,7 +27,7 @@ export function SiteHeader() {
   return (
     <header className="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-start px-4 pt-4 sm:pt-5">
       <nav
-        className={`ease-expo pointer-events-auto flex h-12 w-auto items-center gap-4 rounded-full pr-1.5 pl-3.5 transition-all duration-500 sm:pl-4 ${
+        className={`ease-expo pointer-events-auto flex h-12 w-full items-center justify-between gap-4 rounded-full pr-1.5 pl-3.5 transition-all duration-500 sm:w-[85%] sm:pl-4 md:w-2/3 lg:w-1/2 lg:max-w-3xl ${
           scrolled
             ? "border border-neutral-200/90 bg-white/80 shadow-[0_14px_40px_-28px_rgba(15,15,15,0.4)] backdrop-blur-xl"
             : "border border-transparent bg-transparent"
