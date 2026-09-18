@@ -25,9 +25,9 @@ export function SiteHeader() {
   }, [open]);
 
   return (
-    <header className="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4 sm:pt-5">
+    <header className="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-start px-4 pt-4 sm:pt-5">
       <nav
-        className={`ease-expo pointer-events-auto flex h-14 w-full max-w-5xl items-center justify-between rounded-full pr-2 pl-4 transition-all duration-500 sm:pl-5 ${
+        className={`ease-expo pointer-events-auto flex h-12 w-auto items-center gap-4 rounded-full pr-1.5 pl-3.5 transition-all duration-500 sm:pl-4 ${
           scrolled
             ? "border border-neutral-200/90 bg-white/80 shadow-[0_14px_40px_-28px_rgba(15,15,15,0.4)] backdrop-blur-xl"
             : "border border-transparent bg-transparent"
@@ -38,8 +38,8 @@ export function SiteHeader() {
           className="group/logo flex items-center gap-2.5"
           aria-label="Expendifii, home"
         >
-          <Logo size={30} />
-          <span className="text-[15px] font-semibold tracking-tight text-neutral-900">
+          <Logo size={26} />
+          <span className="text-sm font-semibold tracking-tight text-neutral-900">
             Expendifii
           </span>
         </Link>
@@ -49,27 +49,27 @@ export function SiteHeader() {
             <Link
               key={link.href}
               href={link.href}
-              className="group/nav ease-spring relative inline-flex h-9 items-center rounded-full px-3.5 text-sm font-medium tracking-tight text-neutral-700 transition-all duration-300 hover:-translate-y-px hover:text-neutral-950 hover:shadow-[0_6px_16px_-8px_rgba(15,15,15,0.22)] active:translate-y-0 active:scale-[0.98]"
+              className="group/nav ease-spring relative inline-flex h-8 items-center rounded-full px-3 text-[13px] font-medium tracking-tight text-neutral-700 transition-all duration-300 hover:-translate-y-px hover:text-neutral-950 hover:shadow-[0_6px_16px_-8px_rgba(15,15,15,0.22)] active:translate-y-0 active:scale-[0.98]"
             >
               {link.label}
             </Link>
           ))}
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5">
           <a
             href={site.whatsappHref}
             target="_blank"
             rel="noreferrer"
-            className="group/cta bg-ink ease-expo relative inline-flex h-10 items-center gap-2 overflow-hidden rounded-full px-4 text-[13px] font-medium text-white transition-all duration-500 hover:-translate-y-px hover:shadow-[0_14px_30px_-16px_rgba(15,15,15,0.7)] active:translate-y-0 active:scale-[0.98]"
+            className="group/cta bg-ink ease-expo relative inline-flex h-9 items-center gap-1.5 overflow-hidden rounded-full px-3.5 text-[12px] font-medium text-white transition-all duration-500 hover:-translate-y-px hover:shadow-[0_14px_30px_-16px_rgba(15,15,15,0.7)] active:translate-y-0 active:scale-[0.98]"
           >
             <span
               aria-hidden="true"
               className="animate-sheen pointer-events-none absolute inset-y-0 -left-1/3 w-1/3 bg-linear-to-r from-transparent via-white/25 to-transparent"
             />
-            <WhatsAppMark className="relative h-4 w-4" />
+            <WhatsAppMark className="relative h-3.5 w-3.5" />
             <span className="relative hidden sm:inline">See a demo</span>
-            <ArrowUpRight className="ease-spring relative h-3.5 w-3.5 transition-transform duration-500 group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5" />
+            <ArrowUpRight className="ease-spring relative h-3 w-3 transition-transform duration-500 group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5" />
           </a>
 
           <button
@@ -77,7 +77,7 @@ export function SiteHeader() {
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-label="Toggle menu"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 bg-white/70 text-neutral-800 transition-colors duration-200 hover:bg-white sm:hidden"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-200 bg-white/70 text-neutral-800 transition-colors duration-200 hover:bg-white sm:hidden"
           >
             <ChevronDown
               className={`h-4 w-4 transition-transform duration-300 ${open ? "rotate-180" : ""}`}

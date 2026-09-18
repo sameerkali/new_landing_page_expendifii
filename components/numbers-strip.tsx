@@ -51,8 +51,7 @@ export function NumbersStrip() {
           data-reveal-delay="300"
           className="mt-12 max-w-xl text-[15px] leading-relaxed text-white/60"
         >
-          Built and run by us, not resold or white-labelled. India-wide, based in
-          Noida.
+          Built and run by us, not resold or white-labelled. India-wide.
         </p>
       </div>
     </section>

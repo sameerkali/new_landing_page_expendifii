@@ -131,7 +131,7 @@ export default function TermsOfService() {
         {
           heading: "Contact",
           body: [
-            "Expendifii, Noida, Uttar Pradesh, India.",
+            "Expendifii, India.",
             "work.sameerfaridi@gmail.com · +91 96393 56395",
           ],
         },

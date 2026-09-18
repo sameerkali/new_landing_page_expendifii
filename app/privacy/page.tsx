@@ -111,7 +111,7 @@ export default function PrivacyPolicy() {
           heading: "Grievance officer and contact",
           body: [
             "Grievance Officer: Sameer Faridi.",
-            "Expendifii, Noida, Uttar Pradesh, India.",
+            "Expendifii, India.",
             "work.sameerfaridi@gmail.com · +91 96393 56395",
           ],
         },

@@ -12,8 +12,8 @@ export const site = {
   whatsapp: "+91 96393 56395",
   whatsappHref: "https://wa.me/919639356395",
   email: "work.sameerfaridi@gmail.com",
-  location: "Noida, India",
-  linkedin: "https://in.linkedin.com/company/expendifii",
+  location: "India",
+  linkedin: "https://www.linkedin.com/in/sameer-faridi",
   year: 2026,
 } as const;
 
@@ -399,7 +399,7 @@ export const numbers = [
   { value: "3", label: "Products live" },
   { value: "89", label: "Paying businesses" },
   { value: "100%", label: "Built and run by us" },
-  { value: "Noida", label: "Based in India, customers India-wide" },
+  { value: "India", label: "Based in India, customers India-wide" },
 ];
 
 export type Audience = {
@@ -485,12 +485,11 @@ export const faqs = [
   },
   {
     q: "Where are you based?",
-    a: "Noida, India. Customers are across India.",
+    a: "India. Customers are across the country.",
   },
 ];
 
 export const navLinks = [
   { label: "Products", href: "/#products" },
   { label: "Why us", href: "/#why" },
-  { label: "FAQ", href: "/#faq" },
 ];

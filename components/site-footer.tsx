@@ -106,7 +106,7 @@ export function SiteFooter() {
             © {site.year} Expendifii {site.footerLine}
           </p>
           <p className="font-mono text-[11px] tracking-[0.1em] text-neutral-400">
-            Noida, India
+            {site.location}
           </p>
         </div>
       </div>
