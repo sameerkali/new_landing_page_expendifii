@@ -157,28 +157,28 @@ export const products: Product[] = [
   },
   {
     slug: "landing-pages",
-    name: "Custom landing pages",
+    name: "Websites for local businesses",
     domain: "Built to order",
     href: "#contact",
     status: "Available",
-    customers: "Built once, hosted by us",
-    headline: "Need a page, not a product?",
+    customers: "14+ live websites",
+    headline: "Professional websites for local businesses",
     summary:
-      "Single-page sites for shops and small businesses, hosted and maintained by us.",
+      "Ready-made packages from ₹6,000 for restaurants, shops, and local businesses.",
     body: [
-      "We also build single-page sites for shops and small businesses somewhere to send people from Instagram, Google, or a printed menu. Built once, fast, and we host and maintain it so you don't have to think about it again.",
+      "We design, build, and launch fast, mobile-friendly websites for restaurants, shops, services, and local businesses. Choose a ready package or tell us what you need built once, hosted and maintained by us.",
     ],
     bullets: [
-      "Somewhere to send people from Instagram, Google, or a printed menu",
-      "Built once, fast",
+      "Ready packages from ₹6,000, or a custom quote for admin panels and backend features",
+      "Mobile-first, WhatsApp-ready, built to launch fast",
       "We host and maintain it",
     ],
     image: "/animation_images/landingPageDisplay.webp",
-    imageAlt: "Custom landing page built for a café",
+    imageAlt: "Website built for a local café",
     gallery: [
       {
         src: "/animation_images/landingPageDisplay.webp",
-        alt: "Custom landing page built for a café",
+        alt: "Website built for a local café",
         caption: "One page, built once, hosted and maintained by us.",
       },
     ],
@@ -192,6 +192,7 @@ export type Restaurant = {
   city: string;
   name: string;
   category: string;
+  tag: "cafe" | "restaurant";
   address: string;
   website: string;
   website_verified: boolean;
@@ -208,6 +209,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Rishikesh",
     name: "Beatles Cafe (Cafe Delmar)",
     category: "Cafe / Restaurant",
+    tag: "cafe",
     address:
       "Tapovan, Sarai, Paidal Marg, near Divine Resort, Rishikesh, Uttarakhand 249192",
     website: "https://thebeatlescafe.in/",
@@ -220,6 +222,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Rishikesh",
     name: "Bhūmi Café",
     category: "Cafe / Vegan / Healthy Food",
+    tag: "cafe",
     address:
       "Divya, Yoga St, opposite Patanjali Yoga Foundation, Lower Tapovan, Rishikesh, Uttarakhand 249192",
     website: "https://www.bhumicafe.com/",
@@ -234,6 +237,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Rishikesh",
     name: "Ganga View Cafe",
     category: "Cafe / Multi Cuisine / Riverside Restaurant",
+    tag: "cafe",
     address: "Near 13 Stories Temple, Laxman Jhula, Rishikesh 249302",
     website: "https://gangaviewcafe.com/",
     website_verified: true,
@@ -246,6 +250,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Rishikesh",
     name: "Pink Cafe Bar & Restaurant",
     category: "Cafe / Bar / Restaurant",
+    tag: "cafe",
     address: "Bypass Road, near Swiss Cottage, Tapovan, Rishikesh 249192",
     website: "https://pinkcaferishikesh.com/",
     website_verified: true,
@@ -257,6 +262,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Noida",
     name: "Desi Vibes",
     category: "North Indian / Mughlai",
+    tag: "restaurant",
     address: "G-44, Sector 18, Noida, Uttar Pradesh 201301",
     website: "https://www.desivibes.in/",
     website_verified: true,
@@ -268,6 +274,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Noida",
     name: "The Punjab Club",
     category: "North Indian / Punjabi / Mughlai / Continental",
+    tag: "restaurant",
     address:
       "Ground Floor, Tower B, Advant Navis Business Park, Sector 142, Noida, Uttar Pradesh 201304",
     website: "https://www.thepunjabclub.com/",
@@ -281,6 +288,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Noida",
     name: "TAWAK",
     category: "Indian / Oriental / Pan Asian",
+    tag: "restaurant",
     address: "H-224/H, 1st Floor, Sector 63, Noida, Uttar Pradesh 201301",
     website: "https://tawak.limetray.com/",
     website_verified: true,
@@ -294,6 +302,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Noida",
     name: "Rust 'N' Roast",
     category: "Indian / Italian / Fast Food",
+    tag: "restaurant",
     address: "Sector 16B, Noida, Uttar Pradesh, India",
     website: "https://www.rustnroast.com/",
     website_verified: true,
@@ -304,6 +313,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Noida",
     name: "Ministry of Daru",
     category: "Restaurant / Bar / Live Music",
+    tag: "restaurant",
     address: "H1A/25, Sector 63, Noida, Uttar Pradesh 201301",
     website: "https://www.ministryofdaru.com/",
     website_verified: true,
@@ -316,6 +326,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Noida",
     name: "Saulé Kitchen & Bar",
     category: "Contemporary Restaurant / Bar",
+    tag: "restaurant",
     address:
       "1st Floor, Golf Street Hub, Jaypee Wishtown, Sector 128, Noida, Uttar Pradesh 201304",
     website: "https://www.saule.co.in/",
@@ -329,6 +340,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Noida",
     name: "Anardana",
     category: "Modern Indian",
+    tag: "restaurant",
     address: "Sector 50, Noida, Uttar Pradesh, India",
     website: "https://www.anardana.in/",
     website_verified: true,
@@ -341,6 +353,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Noida",
     name: "Golden Spoon Restaurant",
     category: "Pure Vegetarian / Indian",
+    tag: "restaurant",
     address: "Noida, Uttar Pradesh, India",
     website: "https://goldenspoonrestro.com/",
     website_verified: true,
@@ -351,6 +364,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Noida",
     name: "Biryani Blues",
     category: "Biryani / Indian",
+    tag: "restaurant",
     address: "Sector 110, Noida, Uttar Pradesh, India",
     website: "https://biryanibluescom.limetray.com/",
     website_verified: true,
@@ -362,6 +376,7 @@ export const restaurantsData: Restaurant[] = [
     city: "Noida",
     name: "Vaango",
     category: "South Indian / Vegetarian",
+    tag: "restaurant",
     address: "Noida, Uttar Pradesh, India",
     website: "https://vaango.in/",
     website_verified: true,
@@ -492,4 +507,277 @@ export const faqs = [
 export const navLinks = [
   { label: "Products", href: "/#products" },
   { label: "Why us", href: "/#why" },
+];
+
+/**
+ * Content for the /products/landing-pages sales catalog page.
+ * Kept separate from the generic `products` template above since this
+ * page follows its own sales-page structure, not the product template.
+ */
+
+export function packageWhatsappHref(packageName?: string) {
+  const lines = [
+    "Hi, I found your website packages on Expendifii. I want to build a website for my business.",
+    "",
+    "Business name:",
+    "Business type:",
+    packageName
+      ? `Package I'm interested in: ${packageName}`
+      : "Package I'm interested in:",
+    "Requirements:",
+  ];
+  return `${site.whatsappHref}?text=${encodeURIComponent(lines.join("\n"))}`;
+}
+
+export type WebsitePackage = {
+  id: string;
+  name: string;
+  price: string;
+  bestFor: string;
+  features: string[];
+  cta: string;
+  highlight?: boolean;
+};
+
+export const websitePackages: WebsitePackage[] = [
+  {
+    id: "starter",
+    name: "Starter Website",
+    price: "₹6,000",
+    bestFor:
+      "Small businesses that need a simple professional online presence.",
+    features: [
+      "One-page website",
+      "Mobile responsive design",
+      "Business information",
+      "Services/products section",
+      "Gallery",
+      "WhatsApp button",
+      "Google Maps",
+      "Contact section",
+      "Basic SEO setup",
+    ],
+    cta: "See Starter Demo",
+  },
+  {
+    id: "business",
+    name: "Business Website",
+    price: "₹10,000–₹12,000",
+    bestFor:
+      "Businesses that need multiple pages and more room to showcase their services.",
+    features: [
+      "Everything in Starter",
+      "Multiple pages",
+      "Services/menu pages",
+      "Gallery",
+      "Contact form",
+      "WhatsApp integration",
+      "Google Maps",
+      "Social media links",
+      "Basic SEO setup",
+    ],
+    cta: "See Business Demos",
+    highlight: true,
+  },
+  {
+    id: "custom",
+    name: "Custom Website",
+    price: "₹16,000–₹20,000+",
+    bestFor:
+      "Businesses that need custom functionality or an admin panel.",
+    features: [
+      "Everything in Business",
+      "Custom UI/UX",
+      "Admin panel",
+      "Content management",
+      "Database",
+      "Backend integration",
+      "Custom business features",
+      "Deployment",
+    ],
+    cta: "Request a Quote",
+  },
+];
+
+export const packageComparison: {
+  feature: string;
+  starter: string;
+  business: string;
+  custom: string;
+}[] = [
+  { feature: "Responsive design", starter: "✓", business: "✓", custom: "✓" },
+  { feature: "WhatsApp", starter: "✓", business: "✓", custom: "✓" },
+  { feature: "Google Maps", starter: "✓", business: "✓", custom: "✓" },
+  { feature: "Gallery", starter: "✓", business: "✓", custom: "✓" },
+  { feature: "Contact form", starter: "Optional", business: "✓", custom: "✓" },
+  { feature: "Multiple pages", starter: "—", business: "✓", custom: "✓" },
+  { feature: "Menu / catalogue", starter: "Basic", business: "✓", custom: "✓" },
+  { feature: "Custom UI", starter: "—", business: "Basic", custom: "✓" },
+  { feature: "Admin panel", starter: "—", business: "—", custom: "✓" },
+  { feature: "Database / backend", starter: "—", business: "—", custom: "✓" },
+  { feature: "Custom features", starter: "—", business: "—", custom: "✓" },
+];
+
+export const websiteFeatures = [
+  {
+    title: "Mobile-first",
+    body: "Your website works properly on phones, tablets and desktops.",
+  },
+  {
+    title: "WhatsApp",
+    body: "Customers can contact you directly from the website.",
+  },
+  {
+    title: "Google Maps",
+    body: "Make it easy for customers to find your business.",
+  },
+  {
+    title: "Gallery",
+    body: "Show your products, food, work, interiors or services.",
+  },
+  {
+    title: "Contact & enquiries",
+    body: "Let customers send enquiries directly from the website.",
+  },
+  {
+    title: "Fast & hosted",
+    body: "We deploy the website and handle the technical setup.",
+  },
+];
+
+export const packageGuide = [
+  {
+    id: "starter",
+    title: "Choose Starter if:",
+    body: "You mainly need a professional page with your business information, services, photos, WhatsApp and location.",
+  },
+  {
+    id: "business",
+    title: "Choose Business if:",
+    body: "You need separate pages for services, menu, products, gallery or other business information.",
+  },
+  {
+    id: "custom",
+    title: "Choose Custom if:",
+    body: "You need an admin panel, database, booking, payments, product management or custom functionality.",
+  },
+];
+
+export const addOns: { name: string; price: string }[] = [
+  { name: "Extra page", price: "₹1,000" },
+  { name: "Admin panel", price: "₹5,000" },
+  { name: "Product catalogue", price: "₹3,000" },
+  { name: "Booking system", price: "₹3,000" },
+  { name: "Payment integration", price: "₹2,000" },
+  { name: "Enquiry management", price: "₹2,000" },
+  { name: "Basic SEO setup", price: "₹1,500" },
+  { name: "Custom functionality", price: "Get a quote" },
+];
+
+export const whatsIncludedItems = [
+  "UI/design",
+  "Frontend development",
+  "Responsive implementation",
+  "Agreed integrations",
+  "Deployment",
+  "Basic testing",
+  "Agreed revisions",
+];
+
+export const whatsNotIncluded = [
+  "Domain, hosting, paid APIs, SMS services, WhatsApp/SMS providers, payment gateway charges, premium plugins/services and other third-party costs may be charged separately.",
+  "Professional photography, video production, extensive copywriting and other content-production work are not included unless specifically agreed.",
+  "Custom features outside the selected package are quoted separately.",
+];
+
+export const revisionPolicy =
+  "Each project includes a defined number of revision rounds based on the selected package. Major redesigns or new functionality requested after approval may be quoted separately.";
+
+export const whatWeNeed = [
+  "Business name",
+  "Logo",
+  "Business description",
+  "Services/products",
+  "Photos",
+  "Phone number",
+  "WhatsApp number",
+  "Address",
+  "Google Maps location",
+  "Social media links",
+  "Domain name, if already available",
+];
+
+export const buildProcess = [
+  {
+    step: "01",
+    title: "Tell us about your business",
+    body: "Send your business details and requirements.",
+  },
+  {
+    step: "02",
+    title: "Choose your package",
+    body: "We recommend the appropriate package based on your requirements.",
+  },
+  {
+    step: "03",
+    title: "We design & build",
+    body: "We create the website and implement the agreed features.",
+  },
+  {
+    step: "04",
+    title: "Review",
+    body: "You review the website and provide feedback.",
+  },
+  {
+    step: "05",
+    title: "Launch",
+    body: "We deploy the final website on your domain.",
+  },
+];
+
+export const websiteFaqs = [
+  {
+    q: "How much does a website cost?",
+    a: "Website packages start at ₹6,000. Multi-page websites start at ₹10,000–₹12,000 and custom websites with admin functionality start at ₹16,000–₹20,000+.",
+  },
+  {
+    q: "Is domain and hosting included?",
+    a: "Domain, hosting and third-party service costs depend on the setup and may be charged separately.",
+  },
+  {
+    q: "Can I request custom features?",
+    a: "Yes. Custom functionality is quoted separately based on the requirement.",
+  },
+  {
+    q: "Can I update my website myself?",
+    a: "Yes, if an admin panel/content management system is included in your package.",
+  },
+  {
+    q: "Is the website mobile friendly?",
+    a: "Yes. All website packages are designed to work across mobile, tablet and desktop screens.",
+  },
+  {
+    q: "Can you help with content?",
+    a: "Yes. Content assistance can be discussed if you need help preparing website copy.",
+  },
+  {
+    q: "Can I add features later?",
+    a: "Yes. Additional functionality can be added later and will be quoted separately.",
+  },
+  {
+    q: "How long does it take?",
+    a: "Delivery time depends on the package, content readiness and project scope. We confirm the expected timeline before starting.",
+  },
+  {
+    q: "Do you provide maintenance?",
+    a: "Yes. Hosting and maintenance arrangements can be discussed based on the project.",
+  },
+];
+
+export const websiteTrustStrip = [
+  "14+ live websites",
+  "Mobile responsive",
+  "WhatsApp integration",
+  "India-based development",
+  "Direct support",
 ];

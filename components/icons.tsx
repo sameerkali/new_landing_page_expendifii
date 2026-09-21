@@ -35,6 +35,14 @@ export function ChevronDown(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function Check(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} strokeWidth={2.4} {...props}>
+      <path d="m5 12.5 4.5 4.5L19 7" />
+    </svg>
+  );
+}
+
 export function WhatsAppMark(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
