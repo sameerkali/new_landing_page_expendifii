@@ -577,7 +577,6 @@ export const websitePackages: WebsitePackage[] = [
       "Basic SEO setup",
     ],
     cta: "See Business Demos",
-    highlight: true,
   },
   {
     id: "custom",
@@ -596,8 +595,15 @@ export const websitePackages: WebsitePackage[] = [
       "Deployment",
     ],
     cta: "Request a Quote",
+    highlight: true,
   },
 ];
+
+export const designDirection = {
+  heading: "Already have a look in mind?",
+  note: "Custom design is available on every package, not just Custom.",
+  linkHref: "https://dribbble.com/tags/restaurant-landing-page",
+};
 
 export const packageComparison: {
   feature: string;

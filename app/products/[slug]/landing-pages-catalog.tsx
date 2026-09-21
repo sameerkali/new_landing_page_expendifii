@@ -10,6 +10,7 @@ import { WebsitePortfolio } from "@/components/website-portfolio";
 import {
   addOns,
   buildProcess,
+  designDirection,
   packageComparison,
   packageGuide,
   packageWhatsappHref,
@@ -45,7 +46,7 @@ export function LandingPagesCatalog({ product }: { product: Product }) {
       <section className="relative overflow-hidden pt-32 pb-16 sm:pt-36 lg:pt-40">
         <div
           aria-hidden="true"
-          className="bg-clay-bright/[0.06] pointer-events-none absolute -top-40 -right-32 h-[32rem] w-[32rem] rounded-full blur-3xl"
+          className="bg-clay-bright/6 pointer-events-none absolute -top-40 -right-32 h-[32rem] w-[32rem] rounded-full blur-3xl"
         />
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -270,6 +271,34 @@ export function LandingPagesCatalog({ product }: { product: Product }) {
               ))}
             </tbody>
           </table>
+        </div>
+
+        {/* design direction */}
+        <div
+          data-reveal
+          className="border-clay-line bg-clay-tint mt-6 rounded-2xl border p-6 sm:p-8"
+        >
+          <p className="text-ink text-[15px] font-semibold tracking-tight">
+            {designDirection.heading}
+          </p>
+          <p className="mt-2 max-w-2xl text-[14px] leading-relaxed text-neutral-700">
+            Browse restaurant and café website designs on{" "}
+            <a
+              href={designDirection.linkHref}
+              target="_blank"
+              rel="noreferrer"
+              className="text-clay font-medium underline underline-offset-2 hover:text-clay-bright"
+            >
+              Dribbble
+            </a>
+            , or just Google &ldquo;restaurant cafe landing page
+            designs.&rdquo; Pick anything you like and send it to us —
+            we&apos;ll design and build your website on top of that
+            direction.
+          </p>
+          <p className="mt-3 text-[13px] font-medium text-neutral-600">
+            {designDirection.note}
+          </p>
         </div>
       </section>
 
