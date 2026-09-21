@@ -161,7 +161,7 @@ export const products: Product[] = [
     domain: "Built to order",
     href: "#contact",
     status: "Available",
-    customers: "14+ live websites",
+    customers: "13+ live websites",
     headline: "Professional websites for local businesses",
     summary:
       "Ready-made packages from ₹6,000 for restaurants, shops, and local businesses.",
@@ -203,19 +203,6 @@ export type Restaurant = {
 };
 
 export const restaurantsData: Restaurant[] = [
-  {
-    id: 1,
-    imgSrc: "/restaurants/1.webp",
-    city: "Rishikesh",
-    name: "Beatles Cafe (Cafe Delmar)",
-    category: "Cafe / Restaurant",
-    tag: "cafe",
-    address:
-      "Tapovan, Sarai, Paidal Marg, near Divine Resort, Rishikesh, Uttarakhand 249192",
-    website: "https://thebeatlescafe.in/",
-    website_verified: true,
-    phone: "+91 76181 61717",
-  },
   {
     id: 2,
     imgSrc: "/restaurants/2.webp",
@@ -781,7 +768,7 @@ export const websiteFaqs = [
 ];
 
 export const websiteTrustStrip = [
-  "14+ live websites",
+  "13+ live websites",
   "Mobile responsive",
   "WhatsApp integration",
   "India-based development",
