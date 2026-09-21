@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import { restaurantsData } from "@/lib/content";
 import { ArrowUpRight } from "./icons";
@@ -49,7 +50,7 @@ export function WebsitePortfolio() {
         ))}
       </div>
 
-      <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map((r, i) => (
           <a
             key={r.id}
@@ -58,37 +59,41 @@ export function WebsitePortfolio() {
             rel="noreferrer"
             data-reveal
             data-reveal-delay={String(30 * (i % 8))}
-            className="group/site ease-expo relative flex flex-col justify-between gap-8 overflow-hidden rounded-2xl border border-neutral-200 bg-white p-5 transition-all duration-500 hover:-translate-y-1 hover:border-neutral-300 hover:shadow-[0_22px_44px_-26px_rgba(15,15,15,0.2)]"
+            className="group/site ease-expo relative isolate aspect-[9/7] overflow-hidden rounded-[20px] shadow-[0_18px_36px_-24px_rgba(15,15,15,0.4)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_26px_46px_-20px_rgba(15,15,15,0.5)]"
           >
+            {r.image ? (
+              <Image
+                src={r.image}
+                alt={r.name}
+                fill
+                unoptimized
+                sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                className="object-cover transition-transform duration-1000 ease-out group-hover/site:scale-[1.06]"
+              />
+            ) : (
+              <div className="from-ink via-ink-2 to-ink-3 absolute inset-0 bg-gradient-to-br" />
+            )}
+
+            {/* warm duotone wash */}
             <div
               aria-hidden="true"
-              className="bg-clay-tint/70 pointer-events-none absolute -top-10 -right-10 h-28 w-28 rounded-full blur-2xl transition-opacity duration-500 group-hover/site:opacity-100"
+              className="from-clay-bright/45 pointer-events-none absolute inset-0 bg-gradient-to-br via-transparent to-transparent mix-blend-overlay"
             />
-            <div className="relative flex items-start justify-between gap-3">
-              <span className="text-clay font-mono text-[11px] tracking-[0.18em]">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <ArrowUpRight className="ease-spring h-3.5 w-3.5 shrink-0 text-neutral-300 transition-all duration-500 group-hover/site:translate-x-0.5 group-hover/site:-translate-y-0.5 group-hover/site:text-neutral-800" />
-            </div>
+            {/* scrim for text legibility, top and bottom */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/35 via-transparent to-black/85"
+            />
 
-            <div className="relative">
-              <p className="text-ink text-[15px] font-semibold tracking-tight">
+            <span className="text-clay ease-expo absolute top-2.5 right-2.5 flex h-7 w-7 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-all duration-500 group-hover/site:bg-white">
+              <ArrowUpRight className="ease-spring h-3.5 w-3.5 transition-transform duration-500 group-hover/site:translate-x-0.5 group-hover/site:-translate-y-0.5" />
+            </span>
+
+            <span className="absolute inset-x-4 bottom-3.5">
+              <span className="block truncate text-[14.5px] font-semibold tracking-tight text-white">
                 {r.name}
-              </p>
-              <p className="mt-1 text-[13px] text-neutral-500">
-                {r.category}
-              </p>
-            </div>
-
-            <div className="relative flex items-center justify-between gap-2">
-              <span className="flex items-center gap-2 font-mono text-[10px] tracking-[0.16em] text-neutral-400 uppercase">
-                <span className="bg-clay-bright h-1.5 w-1.5 rounded-full" />
-                {r.city}
               </span>
-              <span className="text-[12px] font-medium text-neutral-700 group-hover/site:text-neutral-950">
-                Visit website
-              </span>
-            </div>
+            </span>
           </a>
         ))}
       </div>

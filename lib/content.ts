@@ -188,7 +188,7 @@ export const products: Product[] = [
 
 export type Restaurant = {
   id: number;
-  imgSrc: string;
+  image?: string;
   city: string;
   name: string;
   category: string;
@@ -205,7 +205,7 @@ export type Restaurant = {
 export const restaurantsData: Restaurant[] = [
   {
     id: 2,
-    imgSrc: "/restaurants/2.webp",
+    image: "/cafe_images/bhumiCafe.webp",
     city: "Rishikesh",
     name: "Bhūmi Café",
     category: "Cafe / Vegan / Healthy Food",
@@ -220,7 +220,7 @@ export const restaurantsData: Restaurant[] = [
   },
   {
     id: 3,
-    imgSrc: "/restaurants/3.webp",
+    image: "/cafe_images/gangaviewcafe.webp",
     city: "Rishikesh",
     name: "Ganga View Cafe",
     category: "Cafe / Multi Cuisine / Riverside Restaurant",
@@ -233,7 +233,7 @@ export const restaurantsData: Restaurant[] = [
   },
   {
     id: 4,
-    imgSrc: "/restaurants/4.webp",
+    image: "/cafe_images/pinkcafe.webp",
     city: "Rishikesh",
     name: "Pink Cafe Bar & Restaurant",
     category: "Cafe / Bar / Restaurant",
@@ -245,7 +245,7 @@ export const restaurantsData: Restaurant[] = [
   },
   {
     id: 5,
-    imgSrc: "/restaurants/5.webp",
+    image: "/cafe_images/desivibesCafe.webp",
     city: "Noida",
     name: "Desi Vibes",
     category: "North Indian / Mughlai",
@@ -257,7 +257,7 @@ export const restaurantsData: Restaurant[] = [
   },
   {
     id: 6,
-    imgSrc: "/restaurants/6.webp",
+    image: "/cafe_images/thePunjabiClubCafe.webp",
     city: "Noida",
     name: "The Punjab Club",
     category: "North Indian / Punjabi / Mughlai / Continental",
@@ -271,7 +271,7 @@ export const restaurantsData: Restaurant[] = [
   },
   {
     id: 7,
-    imgSrc: "/restaurants/7.webp",
+    image: "/cafe_images/tawakCafe.webp",
     city: "Noida",
     name: "TAWAK",
     category: "Indian / Oriental / Pan Asian",
@@ -285,7 +285,7 @@ export const restaurantsData: Restaurant[] = [
   },
   {
     id: 8,
-    imgSrc: "/restaurants/8.webp",
+    image: "/cafe_images/rustnroastCafe.webp",
     city: "Noida",
     name: "Rust 'N' Roast",
     category: "Indian / Italian / Fast Food",
@@ -296,7 +296,7 @@ export const restaurantsData: Restaurant[] = [
   },
   {
     id: 9,
-    imgSrc: "/restaurants/9.webp",
+    image: "/cafe_images/ministryofdarucafe.webp",
     city: "Noida",
     name: "Ministry of Daru",
     category: "Restaurant / Bar / Live Music",
@@ -309,7 +309,7 @@ export const restaurantsData: Restaurant[] = [
   },
   {
     id: 10,
-    imgSrc: "/restaurants/10.webp",
+    image: "/cafe_images/sauleCafe.webp",
     city: "Noida",
     name: "Saulé Kitchen & Bar",
     category: "Contemporary Restaurant / Bar",
@@ -323,7 +323,7 @@ export const restaurantsData: Restaurant[] = [
   },
   {
     id: 11,
-    imgSrc: "/restaurants/11.webp",
+    image: "/cafe_images/anardanaCafe.webp",
     city: "Noida",
     name: "Anardana",
     category: "Modern Indian",
@@ -336,7 +336,7 @@ export const restaurantsData: Restaurant[] = [
   },
   {
     id: 12,
-    imgSrc: "/restaurants/12.webp",
+    image: "/cafe_images/goldenspoonrestroCafe.webp",
     city: "Noida",
     name: "Golden Spoon Restaurant",
     category: "Pure Vegetarian / Indian",
@@ -347,7 +347,7 @@ export const restaurantsData: Restaurant[] = [
   },
   {
     id: 13,
-    imgSrc: "/restaurants/13.webp",
+    image: "/cafe_images/biryanibiullsCafe.webp",
     city: "Noida",
     name: "Biryani Blues",
     category: "Biryani / Indian",
@@ -359,7 +359,7 @@ export const restaurantsData: Restaurant[] = [
   },
   {
     id: 14,
-    imgSrc: "/restaurants/14.webp",
+    image: "/cafe_images/vaangoCafe.webp",
     city: "Noida",
     name: "Vaango",
     category: "South Indian / Vegetarian",
