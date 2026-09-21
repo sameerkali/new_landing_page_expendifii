@@ -51,14 +51,12 @@ export function WebsitePortfolio() {
       </div>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {visible.map((r, i) => (
+        {visible.map((r) => (
           <a
             key={r.id}
             href={r.website}
             target="_blank"
             rel="noreferrer"
-            data-reveal
-            data-reveal-delay={String(30 * (i % 8))}
             className="group/site ease-expo relative isolate aspect-[9/7] overflow-hidden rounded-[20px] shadow-[0_18px_36px_-24px_rgba(15,15,15,0.4)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_26px_46px_-20px_rgba(15,15,15,0.5)]"
           >
             {r.image ? (
