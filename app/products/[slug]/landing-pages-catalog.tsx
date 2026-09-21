@@ -49,26 +49,7 @@ export function LandingPagesCatalog({ product }: { product: Product }) {
         />
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <nav
-            aria-label="Breadcrumb"
-            className="mb-10 flex items-center gap-2 font-mono text-[11px] tracking-[0.16em] text-neutral-400 uppercase"
-          >
-            <Link
-              href="/#products"
-              className="transition-colors hover:text-neutral-700"
-            >
-              Products
-            </Link>
-            <span aria-hidden="true">/</span>
-            <span className="text-neutral-700">Websites</span>
-          </nav>
-
-          <p
-            data-reveal
-            className="text-clay font-mono text-[11px] tracking-[0.22em] uppercase"
-          >
-            Websites for local businesses
-          </p>
+         
 
           <h1
             data-reveal
